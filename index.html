@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- 
+  Spoon-Based Meal & Movement Planner
+  Copyright (C) 2024 Marceshia O'Neill / Marcevolution
+  
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or 
+  any later version.
+  
+  Attribution required: Credit Marceshia O'Neill and/or Marcevolution
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  GNU General Public License for more details.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcevolution - Spoon-Based Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🥄 Spoon-Based Planner</h1>
+            <p class="subtitle">Gentle meals & movement for where you're at today</p>
+        </header>
+
+        <div class="input-section">
+            <div class="spoon-question">
+                <h2>How many spoons do you have today?</h2>
+                <div class="spoon-scale">
+                    <button class="spoon-btn" data-level="1">1<br><small>Empty</small></button>
+                    <button class="spoon-btn" data-level="2">2<br><small>Low</small></button>
+                    <button class="spoon-btn" data-level="3">3<br><small>Okay</small></button>
+                    <button class="spoon-btn" data-level="4">4<br><small>Good</small></button>
+                    <button class="spoon-btn" data-level="5">5<br><small>Full</small></button>
+                </div>
+                <p id="spoon-display">Select your energy level</p>
+            </div>
+
+        <div class="dietary-question">
+                <h2>Dietary needs? (Check all that apply)</h2>
+                <div class="dietary-options">
+                    <label><input type="checkbox" value="vegetarian"> Vegetarian</label>
+                    <label><input type="checkbox" value="vegan"> Vegan</label>
+                    <label><input type="checkbox" value="gluten-free"> Gluten-Free</label>
+                    <label><input type="checkbox" value="dairy-free"> Dairy-Free</label>
+                    <label><input type="checkbox" value="mediterranean"> Mediterranean Diet</label>
+                    <label><input type="checkbox" value="dash"> DASH Diet</label>
+                    <label><input type="checkbox" value="keto"> Keto</label>
+                    <label><input type="checkbox" value="low-carb"> Atkins/Low-Carb</label>
+                    <label><input type="checkbox" value="paleo"> Paleo</label>
+                    <label><input type="checkbox" value="low-sodium"> Low-Sodium</label>
+                    <label><input type="checkbox" value="diabetic"> Diabetic-Friendly</label>
+                    <label><input type="checkbox" value="low-calorie"> Low-Calorie</label>
+                    <label><input type="checkbox" value="none" id="no-dietary"> No restrictions</label>
+        </div>
+
+        </div>
+
+            <div class="meal-type-question">
+                <h2>What meal are you planning?</h2>
+                <div class="meal-type-options">
+                    <button class="meal-type-btn" data-type="breakfast">🌅 Breakfast</button>
+                    <button class="meal-type-btn" data-type="lunch">☀️ Lunch</button>
+                    <button class="meal-type-btn" data-type="dinner">🌙 Dinner</button>
+                    <button class="meal-type-btn" data-type="snack">🥨 Snack</button>
+                    <button class="meal-type-btn" data-type="any">🤷 Surprise Me</button>
+        </div>
+        
+        <p id="meal-type-display">Select a meal type</p>
+        
+        </div>
+            
+            <div class="pain-question">
+                <h2>Any pain points today? (Check all that apply)</h2>
+                <div class="pain-options">
+                    <label><input type="checkbox" value="back"> Lower Back</label>
+                    <label><input type="checkbox" value="knees"> Knees</label>
+                    <label><input type="checkbox" value="hands"> Hands/Wrists</label>
+                    <label><input type="checkbox" value="neck"> Neck/Shoulders</label>
+                    <label><input type="checkbox" value="none" id="no-pain"> None/Good day</label>
+                </div>
+            </div>
+
+        <div class="workout-type-question">
+            <h2>What type of movement sounds good?</h2>
+            <div class="workout-type-options">
+                <button class="workout-type-btn" data-type="flexibility">🧘 Flexibility</button>
+                <button class="workout-type-btn" data-type="balance">⚖️ Balance</button>
+                <button class="workout-type-btn" data-type="cardio">💓 Cardio</button>
+                <button class="workout-type-btn" data-type="strength">💪 Strength</button>
+                <button class="workout-type-btn" data-type="hiit">🔥 HIIT</button>
+                <button class="workout-type-btn" data-type="circuit">🔄 Circuit</button>
+                <button class="workout-type-btn" data-type="functional">🏃 Functional</button>
+                <button class="workout-type-btn" data-type="any">🤷 Surprise Me</button>
+            </div>
+            <p id="workout-type-display">Select a workout type</p>
+        </div>
+            
+            <button id="generate-btn" class="generate-btn">Generate My Plan</button>
+        
+        </div>
+
+     
+        <div id="results" class="results hidden">
+            <div class="result-card meal-card">
+                <h3>🍽️ Your Meal Options</h3>
+                <p class="meal-intro">Here are 3 options that match your energy and dietary needs:</p>
+                <div id="meal-options-container">
+                    <!-- Meal options will be inserted here -->
+                </div>
+            </div>
+
+            <div class="result-card movement-card">
+                <h3>🧘 Your Gentle Movement</h3>
+                <ul id="movement-result"></ul>
+            </div>
+
+            <div class="result-card affirmation-card">
+                <h3>💜 Today's Reminder</h3>
+                <p id="affirmation-result"></p>
+            </div>
+
+            <button id="reset-btn" class="reset-btn">Start Over</button>
+        </div>
+
+        <footer>
+            <p>Made with 💜 by Marcevolution | You're doing better than you think</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
