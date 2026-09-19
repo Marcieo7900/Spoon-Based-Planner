@@ -359,213 +359,116 @@ const workouts = {
     ]
 };
 
-// ============================================
-// AFFIRMATIONS
-// ============================================
-const affirmations = [
     // ============================================
-    // FANDOM & POP CULTURE
+    // FANDOM-ADJACENT, MYTH & STORYTELLING
+    // Original affirmations with a wink for fellow nerds
     // ============================================
-    
-    // Doctor Who / Sherlock / Lost Girl
-    "You don't need a TARDIS to see that you've already survived so much. Time Lord level resilience, right here.",
-    "Even Sherlock Holmes had off days. You're allowed to be a work in progress.",
-    "You're not a side character in your own story. You're the Doctor, the Winchester, the protagonist. Act like it.",
-    "Like Bo Dennis, you're figuring it out as you go. And that's exactly how it's supposed to be.",
-    "Wibbly-wobbly, timey-wimey... healing isn't linear either. Both are valid.",
-    
-    // Lucifer / Wednesday / Addams Family
-    "What do you truly desire? If it's rest, take it. If it's peace, claim it. No one else gets to decide for you.",
-    "Even the Devil took therapy. You're allowed to work on yourself.",
-    "Lucifer had daddy issues and still ran Hell. Your trauma doesn't disqualify you from greatness.",
-    "Wednesday Addams never smiled for anyone else's comfort. You don't have to either.",
-    "Being 'weird' isn't a flaw. It's a filter for who deserves your time.",
-    "The Addams Family loved each other fiercely without changing who they were. That's the goal.",
-    "Your darkness isn't something to fix. It's part of your light too.",
-    
-    // Harry Potter
-    "It takes great deal of bravery to stand up to our enemies, but a great deal more to stand up to ourselves.",
-    "Happiness can be found even in the darkest of times, if one only remembers to turn on the light.",
-    "You're not a waste of space. You're a wizard, Harry. (Or witch. Or whatever you are.)",
-    "It is our choices that show what we truly are, far more than our abilities.",
-    "We've all got both light and dark inside us. What matters is the part we choose to act on.",
-    
-    // Marvel Cinematic Universe
-    "Tony Stark had anxiety and saved the world anyway. Your struggles don't disqualify your strength.",
-    "Steve Rogers was worthy before the serum. You're worthy before the 'glow up.'",
-    "Even Hulk needed to integrate, not eliminate. All your parts deserve peace.",
-    "T'Challa led with compassion, not ego. That's real strength.",
-    "Peter Parker messed up constantly and still suited up. You're allowed to try again.",
-    "Loki changed his story. You can too.",
-    
-    // DC / Harley Quinn
-    "Harley Quinn left the Joker and became her own villain-turned-hero. You're allowed to outgrow people.",
-    "You don't need Mr. J to be whole. You're the whole damn story.",
-    "Batman had no powers and still showed up. Your ordinary is someone's extraordinary.",
-    
-    // Supernatural
-    "Carry on wayward soldier. There'll be peace when you are done.",
-    "The Winchesters had a 300-episode bad day and kept fighting. You're doing the same.",
-    "Family don't end with blood. Your chosen family counts.",
-    "Even Castiel fell and got back up. Redemption arcs are real.",
-    
-    // Vampire Diaries / Twilight Zone
-    "Elena Gilbert lost everything and still chose humanity. You're choosing too.",
-    "The Twilight Zone taught us reality is subjective. Your reality is valid.",
-    
-    // Sitcoms (Friends, Big Bang, Seinfeld, Raymond)
-    "I'll be there for you... but also, be there for yourself.",
-    "Pivot! When life doesn't work, change direction. You're allowed.",
-    "We were on a break... from productivity. And that's okay.",
-    "Sheldon had routines for a reason. Your coping mechanisms aren't weird, they're necessary.",
-    "Penny wasn't 'less than' because she didn't have a PhD. Your worth isn't your credentials.",
-    "Serenity now! Insanity later. Feel your feelings now so they don't explode.",
-    "Not that there's anything wrong with that... including taking a mental health day.",
-    
-    // Anime (Sailor Moon, MHA, Fruits Basket, Delicious in Dungeon)
-    "Fighting evil by moonlight, winning love by daylight... but first, coffee and self-care.",
-    "In the name of the moon, you will heal! (Even if it takes time.)",
-    "Deku broke himself to save others. You don't have to break. Rest is heroic too.",
-    "Plus Ultra means going beyond... but also knowing when to stop.",
-    "The Sohma family curse was just generational trauma with better aesthetics. Break it.",
-    "Sometimes you have to eat the monster to survive. Metaphorically. Your call.",
-    
-    // Sci-Fi (Stargate, Andromeda)
-    "We never should have survived. But we did. And we'll keep surviving.",
-    "The Stargate took them to new worlds. Your next chapter is just a dial away.",
-    
-    // Pretty Little Liars
-    "-A doesn't get to win. Your anxiety doesn't either.",
-    "Secrets keep you sick. Share when you're ready.",
-    
-    // Gaming / Meta
-    "The cake is a lie, but your worth isn't. — Portal",
-    "It's dangerous to go alone. Take this [self-compassion]. — Zelda",
-    "The Princess is in another castle. So is your energy. Save the game and rest. — Mario",
-    "I used to be an adventurer like you, until I took an arrow to the knee... and learned to rest. — Skyrim",
-    "A wild [bad day] appeared! You used [coping skills]. It's super effective! — Pokémon",
-    "You're not an NPC in someone else's game. You're the player character. Act like it.",
-    "If this were a TV show, this would be the training montage. Cue the music.",
-    "Your plot armor is thick. The writers clearly love you. Keep going.",
-    
-    // ============================================
-    // MAKEUP & SELF-EXPRESSION
-    // ============================================
-    "That winged eyeliner isn't just makeup. It's armor. And you look fierce.",
-    "Your face is a canvas, not a problem. Paint it however makes you feel whole.",
-    "Red lipstick counts as a power move. So does no makeup. Your choice, your power.",
-    "Sometimes the bravest thing you do all day is blend that eyeshadow. That's valid.",
-    "Your beauty routine is a ritual of self-love, not a mask to hide behind.",
-    "Glitter is gender-neutral and so is your right to feel good in your skin.",
-    "That highlight? It's not just catching light. It's catching your own magic.",
-    
-    // ============================================
-    // CHRONIC PAIN & MENTAL HEALTH
-    // ============================================
-    "Depression lies. Anxiety exaggerates. PTSD replays old tapes. You? You're still here. That's truth.",
-    "Your nervous system is trying to protect you from threats that aren't there anymore. Thank it, then breathe.",
-    "Some days the win is 'I stayed alive.' That's not small. That's everything.",
-    "You're not lazy. You're surviving a body and mind that never stop working overtime.",
-    "Healing isn't linear, but neither is time. Both can be wibbly-wobbly and still valid.",
-    "Your trauma responses made sense when they formed. You're allowed to outgrow them now.",
-    "PTSD isn't a life sentence. It's a chapter. And you're the author of what comes next.",
-    
-    // ============================================
-    // BODY IMAGE & WEIGHT
-    // ============================================
-    "Your body carried you through today. That's its job, and it's doing it.",
-    "Weight gain isn't moral failure. It's biology, circumstance, and sometimes survival.",
-    "Your body is a home, not a display piece. Make it comfortable for the resident.",
-    "You can want change and still be kind to your current self. Both are true.",
-    "That work injury wasn't your fault. Neither is the weight. But healing? That's your choice.",
-    "Your body has been through battles. Of course it looks like a warrior.",
-    "Comfortable clothes > flattering clothes. Your body deserves ease.",
-    
-    // ============================================
-    // ENTREPRENEURSHIP & SIDE HUSTLE
-    // ============================================
-    "Building something while exhausted is still building. Slow growth is still growth.",
-    "Your side hustle doesn't need to be perfect. It just needs to be yours.",
-    "Unemployed doesn't mean unworthy. You're in transition, not termination.",
-    "Every empire started as a rough draft. This is yours.",
-    "Working from home in pajamas is still working. The commute is just shorter.",
-    "Your 'unstable' season is actually your foundation being poured. Let it set.",
-    "You don't need a corner office to be a boss. Your kitchen table works too.",
-    
-    // ============================================
-    // LGBTQIA+ INCLUSIVITY (without polyamory focus)
-    // ============================================
-    "Being queer isn't a phase. Neither is your right to take up space.",
-    "Your identity isn't up for debate. It's up for celebration.",
-    "Chosen family counts. Your people are out there.",
-    
-    // ============================================
-    // THE "TIRED BUT DETERMINED" VIBE
-    // ============================================
-    "You're not 'too sensitive.' You're feeling things deeply in a numb world. That's a gift.",
-    "Resting isn't quitting. It's reloading.",
-    "You survived 100% of your worst days. That's a better track record than most action heroes.",
-    "Some days you save the world. Some days you save yourself. Both count.",
-    "You're allowed to be a masterpiece and a work in progress simultaneously.",
-    "Your 'I can't' today doesn't erase your 'I did' from yesterday.",
-    "Being tired doesn't mean you're weak. It means you've been fighting.",
-    "You don't have to earn your rest. You deserve it by existing.",
-    "Progress isn't linear, and that's okay. You're still moving forward.",
-    "Your worth isn't measured by your productivity today.",
-    "Taking care of yourself IS being productive.",
-    "You survived 100% of your bad days so far. That's a pretty good track record.",
-    "It's okay to do small. Small is still something.",
-    "Your body is doing its best, and so are you.",
-    "Rest is not a reward. It's a requirement.",
-    "You don't have to be okay right now. Just be here.",
-    "Tomorrow is a new chance. For now, just breathe.",
-    "Your best is enough, even on hard days.",
-    "Healing takes time. Be patient with yourself.",
-    "You are more than your productivity.",
-    "Every step forward counts, no matter how small.",
-    "Your health is an investment, not an expense.",
-    
-    // ============================================
-    // MARCEVOLUTION BRAND VOICE
-    // ============================================
-    "Come as you are. Messy, tired, hopeful, scared. You're welcome here.",
-    "Evolution isn't about becoming someone new. It's about becoming yourself.",
-    "You don't need to be 'fixed.' You need room to grow. We're making that room.",
-    "Pain and hope can coexist. You're living proof.",
-    "Confidence isn't a destination you arrive at. It's a habit you practice.",
-    "Your makeup bag is a toolkit. Your workout is a ritual. Your rest is sacred.",
-    "You're not behind in life. You're on your own timeline.",
-    "Rebuilding isn't failure. It's architecture.",
-    "You can be in pain and still be powerful. Both are true.",
-    "Marcevolution isn't about perfection. It's about persistence. You're doing it.",
-    
-    // ============================================
-    // GENTLE TOUGH LOVE
-    // ============================================
-    "The only way out is through. But you don't have to walk it alone.",
-    "Your comfort zone is a beautiful place, but nothing grows there. Step out when you're ready.",
-    "That thing you've been putting off? You'll feel better after you start. Promise.",
-    "Future you is already proud of present you for showing up.",
-    "You're not 'too much.' You're just more than they know how to handle.",
-    "Your boundaries aren't walls. They're doors you choose to open.",
-    "You don't need permission to take up space. You already have it.",
-    "The person you're becoming will thank you for not giving up today.",
-    "Your 'someday' starts with today. Even a tiny step counts.",
-    "You're allowed to outgrow people, places, and versions of yourself.",
-    
-    // ============================================
-    // FOR THE DARKEST DAYS
-    // ============================================
-    "If all you did today was exist, that's enough. The world is better with you in it.",
-    "Suicide is a permanent solution to a temporary problem. Call 988 if you're there. We need you.",
-    "Depression tells you you're a burden. Depression lies. You are loved.",
-    "This feeling isn't forever. It's just right now. And right now will pass.",
-    "You don't have to believe in hope right now. I'll believe in it for you.",
-    "Your story isn't over. The author is just taking a breath.",
-    "The fact that you're still here means you haven't given up. That's everything.",
-    "Some days surviving is the only goal. You're succeeding.",
-    "You matter. Even when your brain says you don't. Especially then.",
-    "The world is softer because you're in it. Stay."
+
+    // Time Travel, Detectives & Strange Adventures
+    "You don't need a time machine to change what happens next. Start where you are.",
+    "Healing can be a little timey, a little messy, and a lot nonlinear. You don't have to understand the timeline to keep going.",
+    "Not every mystery needs solving today. Sometimes you need tea, rest, and another look tomorrow.",
+    "You are allowed to gather evidence before believing every terrible thing your brain tells you.",
+    "Curiosity has carried explorers through stranger places than this. Keep asking what might be possible.",
+    "You don't have to know the ending to take the next step in the story.",
+
+    // Gothic Weirdos, Monsters & Beautiful Darkness
+    "You don't owe anyone sunshine just because they are uncomfortable with your clouds.",
+    "Being strange has never stopped anyone worth remembering.",
+    "You can wear black, love the darkness, and still build a life full of light.",
+    "Not every monster needs slaying. Some just need understanding.",
+    "Your shadows don't cancel out your light. They prove there's light somewhere nearby.",
+    "You are allowed to be soft without becoming less formidable.",
+    "There is something wonderfully powerful about refusing to become easier for other people to understand.",
+
+    // Magic, Witches & Old Stories
+    "No wand required. You've been making something out of nothing for years.",
+    "A little courage, a little knowledge, and a suspicious amount of caffeine can feel pretty magical.",
+    "You don't need an invitation to believe there's more waiting for you.",
+    "Every good spell starts with intention. What do you need today?",
+    "The oldest stories knew something important: transformation is rarely comfortable, but it can still be beautiful.",
+    "You don't have to defeat the dragon today. Getting out of bed and locating your sword counts.",
+    "Sometimes the enchanted forest is just Tuesday. Pack snacks anyway.",
+
+    // Heroes, Villains & Antiheroes
+    "You don't need superpowers to do something brave.",
+    "The armor that protected you before doesn't have to stay on forever.",
+    "Being powerful and needing help can exist in the same person.",
+    "Your origin story explains you. It doesn't get to decide your ending.",
+    "You are more than the worst chapter of your backstory.",
+    "Even heroes need somewhere safe to take off the armor.",
+    "You don't have to save the world today. Your corner of it is enough.",
+    "You are allowed to rewrite the role other people assigned you.",
+    "Sometimes character development looks suspiciously like setting a boundary.",
+    "A redemption arc starts with one different choice, not a perfect past.",
+    "You can have villain energy and still choose kindness.",
+    "The cape is optional. Showing up counts.",
+
+    // Mythology & Legends
+    "You don't have to fly close to the sun to prove you have wings.",
+    "Some labyrinths are escaped one turn at a time.",
+    "You are allowed to put down the weight of the world. Atlas was mythical; you are human.",
+    "Like a phoenix, you are allowed to become something new without pretending the fire didn't hurt.",
+    "You don't have to pull a sword from a stone to prove you're worthy.",
+    "Even the moon disappears for a while. Nobody accuses it of giving up.",
+    "Storms have had names for centuries. They still pass.",
+    "You don't need to be fearless to enter the forest. You just need enough courage for the next few steps.",
+
+    // Chosen Family & Epic Journeys
+    "Not every family is inherited. Some of the best ones are assembled along the way.",
+    "You don't have to travel alone just because the quest belongs to you.",
+    "Sometimes your party finds you after the adventure has already started.",
+    "The people worth keeping won't require you to shrink to fit in the group.",
+    "Every adventuring party needs different strengths. Yours belongs there too.",
+    "Needing your people doesn't make you weak. Even legends traveled with companions.",
+
+    // Anime-Adjacent Energy
+    "You don't need a dramatic transformation sequence to become someone you're proud of.",
+    "Your power-up can be eating something, drinking water, and getting eight hours of sleep.",
+    "Going beyond your limits isn't always brave. Sometimes knowing your limit is.",
+    "Training arcs include recovery days. Yours can too.",
+    "You don't have to destroy yourself proving how much you care.",
+    "Generational curses are considerably less glamorous when you call them unhealthy patterns.",
+    "Your next evolution doesn't require hating your current form.",
+    "Main-character energy can absolutely include taking a nap.",
+
+    // Sci-Fi & Space
+    "There are billions of stars out there and somehow you still get to be one of the things the universe made.",
+    "Unknown territory doesn't automatically mean dangerous territory.",
+    "Your next chapter doesn't need coordinates yet.",
+    "You are allowed to explore without knowing exactly where you'll land.",
+    "Sometimes survival is less about conquering a new world and more about making this one livable.",
+    "You don't need to understand the whole universe to know you belong in it.",
+
+    // Gaming & Meta
+    "Low health is a reason to heal, not proof you're bad at the game.",
+    "Save points exist for a reason. Rest, recover, continue when you're ready.",
+    "You are not an NPC in somebody else's story. You get choices too.",
+    "Some days are boss battles. Some are inventory-management days. Both are part of the game.",
+    "You don't have to speedrun your life.",
+    "Changing the difficulty doesn't make your playthrough less valid.",
+    "Using accessibility settings isn't cheating. Neither is accommodating yourself in real life.",
+    "Your stats don't need to be maxed out for you to be worth having in the party.",
+    "If the current strategy keeps draining your health bar, you're allowed to try another one.",
+    "You can pause without quitting.",
+    "Side quests still count as progress.",
+    "Sometimes the objective really is just: survive until the next save point.",
+    "You don't need perfect stats. You need a build that works for you.",
+    "There's no achievement for suffering unnecessarily.",
+    "Your inventory doesn't need to look like anyone else's. Carry what helps.",
+    "You haven't failed because you need another attempt. That's literally how games work.",
+
+    // Storytelling / Meta
+    "A rough chapter doesn't make this a bad story.",
+    "You are allowed to change genres halfway through.",
+    "Plot twists don't erase everything that came before them.",
+    "Character development is rarely comfortable while it's happening.",
+    "You don't have to be the hero in every scene. Sometimes you're the person getting some damn sleep.",
+    "Your story doesn't need to make sense to everyone reading from the outside.",
+    "You are more than the role you learned to play for other people.",
+    "This might be the montage where nothing looks impressive yet. Keep going.",
+    "No one worth rooting for had a perfectly tidy character arc.",
+    "You don't need plot armor. You need support, rest, resources, and another chance."
 ];
 
 // ============================================
